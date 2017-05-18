@@ -12,6 +12,9 @@
 		EC519C7B1ECDA0990018D856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC519C791ECDA0990018D856 /* Main.storyboard */; };
 		EC519C7D1ECDA0990018D856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC519C7C1ECDA0990018D856 /* Assets.xcassets */; };
 		EC519C801ECDA0990018D856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC519C7E1ECDA0990018D856 /* LaunchScreen.storyboard */; };
+		EC519C881ECDA5270018D856 /* Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C871ECDA5270018D856 /* Toilet.swift */; };
+		EC519C8B1ECDA79F0018D856 /* ToiletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C891ECDA79F0018D856 /* ToiletController.swift */; };
+		EC519C8C1ECDA79F0018D856 /* ToiletController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC519C8A1ECDA79F0018D856 /* ToiletController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EC519C7C1ECDA0990018D856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC519C7F1ECDA0990018D856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC519C811ECDA0990018D856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC519C871ECDA5270018D856 /* Toilet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toilet.swift; sourceTree = "<group>"; };
+		EC519C891ECDA79F0018D856 /* ToiletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletController.swift; sourceTree = "<group>"; };
+		EC519C8A1ECDA79F0018D856 /* ToiletController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToiletController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				EC519C7C1ECDA0990018D856 /* Assets.xcassets */,
 				EC519C7E1ECDA0990018D856 /* LaunchScreen.storyboard */,
 				EC519C811ECDA0990018D856 /* Info.plist */,
+				EC519C871ECDA5270018D856 /* Toilet.swift */,
+				EC519C891ECDA79F0018D856 /* ToiletController.swift */,
+				EC519C8A1ECDA79F0018D856 /* ToiletController.xib */,
 			);
 			path = ratptoilette;
 			sourceTree = "<group>";
@@ -125,6 +134,7 @@
 			files = (
 				EC519C801ECDA0990018D856 /* LaunchScreen.storyboard in Resources */,
 				EC519C7D1ECDA0990018D856 /* Assets.xcassets in Resources */,
+				EC519C8C1ECDA79F0018D856 /* ToiletController.xib in Resources */,
 				EC519C7B1ECDA0990018D856 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +148,8 @@
 			files = (
 				EC519C781ECDA0990018D856 /* ViewController.swift in Sources */,
 				EC519C761ECDA0990018D856 /* AppDelegate.swift in Sources */,
+				EC519C8B1ECDA79F0018D856 /* ToiletController.swift in Sources */,
+				EC519C881ECDA5270018D856 /* Toilet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
