@@ -8,9 +8,13 @@
 
 import UIKit
 
-class ToiletController: UIViewController {
+class ToiletController: UIViewController, MKMapViewDelegate  {
 
     let toilet: Toilet
+    
+    @IBOutlet weak var toiletIdTextField: UITextField!
+    @IBOutlet weak var infoTextView: UITextView!
+    @IBOutlet weak var toiletMapView: MKMapView!
     
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?, toilet: Toilet) {
         self.toilet = toilet
@@ -23,6 +27,17 @@ class ToiletController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.toiletMapView.delegate = self
+        
+        //self.nameLabel.text = person.name!
+        
+        if (toilet.coord != nil) {
+            let ann = ToiletAnnotation(coords: toilet.coord!,line: toilet.line, station : toilet.station,
+                                       freeAccess : toilet.freeAccess)
+            
+            toiletMapView.addAnnotation(ann)
+        }
+
 
         // Do any additional setup after loading the view.
     }

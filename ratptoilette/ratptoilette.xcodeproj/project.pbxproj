@@ -15,6 +15,7 @@
 		EC519C881ECDA5270018D856 /* Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C871ECDA5270018D856 /* Toilet.swift */; };
 		EC519C8B1ECDA79F0018D856 /* ToiletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C891ECDA79F0018D856 /* ToiletController.swift */; };
 		EC519C8C1ECDA79F0018D856 /* ToiletController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC519C8A1ECDA79F0018D856 /* ToiletController.xib */; };
+		EC519C8E1ECDAD960018D856 /* ToiletAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C8D1ECDAD960018D856 /* ToiletAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EC519C871ECDA5270018D856 /* Toilet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toilet.swift; sourceTree = "<group>"; };
 		EC519C891ECDA79F0018D856 /* ToiletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletController.swift; sourceTree = "<group>"; };
 		EC519C8A1ECDA79F0018D856 /* ToiletController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToiletController.xib; sourceTree = "<group>"; };
+		EC519C8D1ECDAD960018D856 /* ToiletAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				EC519C871ECDA5270018D856 /* Toilet.swift */,
 				EC519C891ECDA79F0018D856 /* ToiletController.swift */,
 				EC519C8A1ECDA79F0018D856 /* ToiletController.xib */,
+				EC519C8D1ECDAD960018D856 /* ToiletAnnotation.swift */,
 			);
 			path = ratptoilette;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				EC519C761ECDA0990018D856 /* AppDelegate.swift in Sources */,
 				EC519C8B1ECDA79F0018D856 /* ToiletController.swift in Sources */,
 				EC519C881ECDA5270018D856 /* Toilet.swift in Sources */,
+				EC519C8E1ECDAD960018D856 /* ToiletAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
