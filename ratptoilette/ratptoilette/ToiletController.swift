@@ -34,10 +34,11 @@ class ToiletController: UIViewController, MKMapViewDelegate{
         //self.nameLabel.text = person.name!
         
         if (toilet.coord != nil) {
-            let ann = ToiletAnnotation(coords: toilet.coord!,line: toilet.line, station : toilet.station,
-                                       freeAccess : toilet.freeAccess)
-            
-            toiletMapView.addAnnotation(ann)
+            let annotation = ToiletAnnotation(coords: toilet.coord!)
+            annotation.line = toilet.line
+            annotation.station = toilet.station
+            annotation.freeAccess = toilet.freeAccess
+            self.toiletMapView.addAnnotation(annotation)
         }
 
 

@@ -16,11 +16,8 @@ class ToiletAnnotation: NSObject, MKAnnotation {
     var station: String?
     var freeAccess: Bool?
     
-    init(coords : CLLocationCoordinate2D, line: String?,station: String?,freeAccess: Bool?) {
+    init(coords : CLLocationCoordinate2D) {
         self.coordinate = coords
-        self.line = line
-        self.station = station
-        self.freeAccess = freeAccess==nil ? false : freeAccess
         super.init()
     }
 }
