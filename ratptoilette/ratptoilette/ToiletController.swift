@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MapKit
 
-class ToiletController: UIViewController, MKMapViewDelegate  {
+class ToiletController: UIViewController, MKMapViewDelegate{
 
     let toilet: Toilet
     
@@ -24,6 +25,7 @@ class ToiletController: UIViewController, MKMapViewDelegate  {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

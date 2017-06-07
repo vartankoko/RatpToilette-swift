@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC51755F1EE83044004DFCFF /* ToiletListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC51755D1EE83044004DFCFF /* ToiletListViewController.swift */; };
+		EC5175601EE83044004DFCFF /* ToiletListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC51755E1EE83044004DFCFF /* ToiletListViewController.xib */; };
 		EC519C761ECDA0990018D856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C751ECDA0990018D856 /* AppDelegate.swift */; };
 		EC519C781ECDA0990018D856 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C771ECDA0990018D856 /* ViewController.swift */; };
 		EC519C7B1ECDA0990018D856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC519C791ECDA0990018D856 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC51755D1EE83044004DFCFF /* ToiletListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletListViewController.swift; sourceTree = "<group>"; };
+		EC51755E1EE83044004DFCFF /* ToiletListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToiletListViewController.xib; sourceTree = "<group>"; };
 		EC519C721ECDA0990018D856 /* ratptoilette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ratptoilette.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC519C751ECDA0990018D856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC519C771ECDA0990018D856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				EC519C891ECDA79F0018D856 /* ToiletController.swift */,
 				EC519C8A1ECDA79F0018D856 /* ToiletController.xib */,
 				EC519C8D1ECDAD960018D856 /* ToiletAnnotation.swift */,
+				EC51755D1EE83044004DFCFF /* ToiletListViewController.swift */,
+				EC51755E1EE83044004DFCFF /* ToiletListViewController.xib */,
 			);
 			path = ratptoilette;
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 				EC519C801ECDA0990018D856 /* LaunchScreen.storyboard in Resources */,
 				EC519C7D1ECDA0990018D856 /* Assets.xcassets in Resources */,
 				EC519C8C1ECDA79F0018D856 /* ToiletController.xib in Resources */,
+				EC5175601EE83044004DFCFF /* ToiletListViewController.xib in Resources */,
 				EC519C7B1ECDA0990018D856 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +161,7 @@
 				EC519C8B1ECDA79F0018D856 /* ToiletController.swift in Sources */,
 				EC519C881ECDA5270018D856 /* Toilet.swift in Sources */,
 				EC519C8E1ECDAD960018D856 /* ToiletAnnotation.swift in Sources */,
+				EC51755F1EE83044004DFCFF /* ToiletListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +323,7 @@
 				EC519C861ECDA0990018D856 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
