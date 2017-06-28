@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B44171BBD03814303ABC34FA /* Pods_ratptoilette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAE67174A291705D5C47D5C /* Pods_ratptoilette.framework */; };
 		EC3CE4CC1F0399ED00534CA3 /* ToiletDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CE4CB1F0399ED00534CA3 /* ToiletDownloader.swift */; };
 		EC51755F1EE83044004DFCFF /* ToiletListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC51755D1EE83044004DFCFF /* ToiletListViewController.swift */; };
 		EC5175601EE83044004DFCFF /* ToiletListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC51755E1EE83044004DFCFF /* ToiletListViewController.xib */; };
@@ -19,9 +20,13 @@
 		EC519C8B1ECDA79F0018D856 /* ToiletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C891ECDA79F0018D856 /* ToiletController.swift */; };
 		EC519C8C1ECDA79F0018D856 /* ToiletController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC519C8A1ECDA79F0018D856 /* ToiletController.xib */; };
 		EC519C8E1ECDAD960018D856 /* ToiletAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C8D1ECDAD960018D856 /* ToiletAnnotation.swift */; };
+		ECD9C64E1F03BAF800FE0563 /* toilet.csv in Resources */ = {isa = PBXBuildFile; fileRef = ECD9C64D1F03BAF800FE0563 /* toilet.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BEED064C9CFC93BDC7D5B70 /* Pods-ratptoilette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ratptoilette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ratptoilette/Pods-ratptoilette.debug.xcconfig"; sourceTree = "<group>"; };
+		8BAE67174A291705D5C47D5C /* Pods_ratptoilette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ratptoilette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B008113686F01F303B9315 /* Pods-ratptoilette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ratptoilette.release.xcconfig"; path = "Pods/Target Support Files/Pods-ratptoilette/Pods-ratptoilette.release.xcconfig"; sourceTree = "<group>"; };
 		EC3CE4CB1F0399ED00534CA3 /* ToiletDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletDownloader.swift; sourceTree = "<group>"; };
 		EC51755D1EE83044004DFCFF /* ToiletListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletListViewController.swift; sourceTree = "<group>"; };
 		EC51755E1EE83044004DFCFF /* ToiletListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToiletListViewController.xib; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		EC519C891ECDA79F0018D856 /* ToiletController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletController.swift; sourceTree = "<group>"; };
 		EC519C8A1ECDA79F0018D856 /* ToiletController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToiletController.xib; sourceTree = "<group>"; };
 		EC519C8D1ECDAD960018D856 /* ToiletAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletAnnotation.swift; sourceTree = "<group>"; };
+		ECD9C64D1F03BAF800FE0563 /* toilet.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = toilet.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44171BBD03814303ABC34FA /* Pods_ratptoilette.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5180472F56C5E05D949FA3E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BEED064C9CFC93BDC7D5B70 /* Pods-ratptoilette.debug.xcconfig */,
+				98B008113686F01F303B9315 /* Pods-ratptoilette.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC519C691ECDA0990018D856 = {
 			isa = PBXGroup;
 			children = (
 				EC519C741ECDA0990018D856 /* ratptoilette */,
 				EC519C731ECDA0990018D856 /* Products */,
+				5180472F56C5E05D949FA3E9 /* Pods */,
+				F2E666067D75CA178D6B2522 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,8 +99,17 @@
 				EC519C8D1ECDAD960018D856 /* ToiletAnnotation.swift */,
 				EC51755D1EE83044004DFCFF /* ToiletListViewController.swift */,
 				EC51755E1EE83044004DFCFF /* ToiletListViewController.xib */,
+				ECD9C64D1F03BAF800FE0563 /* toilet.csv */,
 			);
 			path = ratptoilette;
+			sourceTree = "<group>";
+		};
+		F2E666067D75CA178D6B2522 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BAE67174A291705D5C47D5C /* Pods_ratptoilette.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC519C841ECDA0990018D856 /* Build configuration list for PBXNativeTarget "ratptoilette" */;
 			buildPhases = (
+				4FF471F7462CB323113CF566 /* [CP] Check Pods Manifest.lock */,
 				EC519C6E1ECDA0990018D856 /* Sources */,
 				EC519C6F1ECDA0990018D856 /* Frameworks */,
 				EC519C701ECDA0990018D856 /* Resources */,
+				5CBC0CCCBC7F60A0BE5DDC01 /* [CP] Embed Pods Frameworks */,
+				BDF0E022CCFF6297BC21BB50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC519C801ECDA0990018D856 /* LaunchScreen.storyboard in Resources */,
+				ECD9C64E1F03BAF800FE0563 /* toilet.csv in Resources */,
 				EC519C7D1ECDA0990018D856 /* Assets.xcassets in Resources */,
 				EC519C8C1ECDA79F0018D856 /* ToiletController.xib in Resources */,
 				EC5175601EE83044004DFCFF /* ToiletListViewController.xib in Resources */,
@@ -153,6 +184,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FF471F7462CB323113CF566 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5CBC0CCCBC7F60A0BE5DDC01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ratptoilette/Pods-ratptoilette-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF0E022CCFF6297BC21BB50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ratptoilette/Pods-ratptoilette-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC519C6E1ECDA0990018D856 /* Sources */ = {
@@ -286,6 +365,7 @@
 		};
 		EC519C851ECDA0990018D856 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BEED064C9CFC93BDC7D5B70 /* Pods-ratptoilette.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ratptoilette/Info.plist;
@@ -299,6 +379,7 @@
 		};
 		EC519C861ECDA0990018D856 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B008113686F01F303B9315 /* Pods-ratptoilette.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ratptoilette/Info.plist;

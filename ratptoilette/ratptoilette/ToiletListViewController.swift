@@ -17,16 +17,28 @@ class ToiletListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.showUsersOnMap()
+        
+        
+        self.showToiletsOnMap()
         // Do any additional setup after loading the view.
     }
 
+    func getToiletsFromCSV()
+    {
+        let url : URL = URL(string: "https://data.ratp.fr/explore/dataset/sanitaires-reseau-ratp/download/?format=csv&timezone=Europe/Berlin&use_labels_for_header=true")!
+        ToiletDownloader.init()
+        ToiletDownloader.load(url: url)
+        let path = "toilet.csv"
+        let importer = CSVImporter<String>
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func showUsersOnMap() {
+    func showToiletsOnMap() {
         for toilet in self.toilets {
             let annotation = ToiletAnnotation(coords: toilet.coord!)
             annotation.line = toilet.line
