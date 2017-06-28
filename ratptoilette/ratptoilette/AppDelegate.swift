@@ -23,7 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = toiletViewController
         window?.makeKeyAndVisible()
-
+// UserDefaults.standard.set(valueToSave, forKey: "token")
+        let url : URL = URL(string: "https://data.ratp.fr/explore/dataset/sanitaires-reseau-ratp/download/?format=csv&timezone=Europe/Berlin&use_labels_for_header=true")!
+        ToiletDownloader.init()
+        ToiletDownloader.load(url: url)
         return true
     }
 
