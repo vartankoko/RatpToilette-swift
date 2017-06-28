@@ -6,13 +6,14 @@
 //  Copyright © 2017 ESGI. All rights reserved.
 //
 
-import Foundation
+iimport Foundation
 
 class ToiletDownloader{
     
     class func load(url: URL) {
-        let localURL : URL
-        localURL=URL.init(string: "toilets.txt")!
+        let localURL = Bundle.main.url(forResource: "toilets", withExtension: "json")
+
+
         let sessionConfig = URLSessionConfiguration.default
     let session = URLSession(configuration: sessionConfig)
     var request = try! URLRequest(url: url)
@@ -25,7 +26,7 @@ class ToiletDownloader{
             }
             
             do {
-                try FileManager.default.copyItem(at: tempLocalUrl, to: localURL)
+                try FileManager.default.copyItem(at: tempLocalUrl, to: localURL!)
             } catch (let writeError) {
                 print("error writing file \(localURL) : \(writeError)")
             }
@@ -35,11 +36,12 @@ class ToiletDownloader{
         }
     }
         do{
-        let path = Bundle.main.path(forResource: "toilets", ofType: "txt")
+        let path = Bundle.main.path(forResource: "toilets", ofType: "json")
         let text =  try String(contentsOfFile: path!)
         print(text)}
         catch{}
         
     task.resume()
-}
+    }
+
 }
