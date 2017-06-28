@@ -6,7 +6,7 @@
 //  Copyright © 2017 ESGI. All rights reserved.
 //
 
-iimport Foundation
+import Foundation
 
 class ToiletDownloader{
     

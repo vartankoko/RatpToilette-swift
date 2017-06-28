@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
-        let toiletViewController = ToiletListViewController(nibName: "ToiletController",bundle : nil)
+        let toiletViewController = ToiletListViewController(nibName: "ToiletListViewController",bundle : nil)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = toiletViewController

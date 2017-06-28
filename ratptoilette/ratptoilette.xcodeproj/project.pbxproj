@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3CE4CC1F0399ED00534CA3 /* ToiletDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3CE4CB1F0399ED00534CA3 /* ToiletDownloader.swift */; };
 		EC51755F1EE83044004DFCFF /* ToiletListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC51755D1EE83044004DFCFF /* ToiletListViewController.swift */; };
 		EC5175601EE83044004DFCFF /* ToiletListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC51755E1EE83044004DFCFF /* ToiletListViewController.xib */; };
 		EC519C761ECDA0990018D856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519C751ECDA0990018D856 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC3CE4CB1F0399ED00534CA3 /* ToiletDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletDownloader.swift; sourceTree = "<group>"; };
 		EC51755D1EE83044004DFCFF /* ToiletListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletListViewController.swift; sourceTree = "<group>"; };
 		EC51755E1EE83044004DFCFF /* ToiletListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToiletListViewController.xib; sourceTree = "<group>"; };
 		EC519C721ECDA0990018D856 /* ratptoilette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ratptoilette.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 		EC519C741ECDA0990018D856 /* ratptoilette */ = {
 			isa = PBXGroup;
 			children = (
+				EC3CE4CB1F0399ED00534CA3 /* ToiletDownloader.swift */,
 				EC519C751ECDA0990018D856 /* AppDelegate.swift */,
 				EC519C771ECDA0990018D856 /* ViewController.swift */,
 				EC519C791ECDA0990018D856 /* Main.storyboard */,
@@ -109,7 +112,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = ESGI;
 				TargetAttributes = {
 					EC519C711ECDA0990018D856 = {
@@ -158,6 +161,7 @@
 			files = (
 				EC519C781ECDA0990018D856 /* ViewController.swift in Sources */,
 				EC519C761ECDA0990018D856 /* AppDelegate.swift in Sources */,
+				EC3CE4CC1F0399ED00534CA3 /* ToiletDownloader.swift in Sources */,
 				EC519C8B1ECDA79F0018D856 /* ToiletController.swift in Sources */,
 				EC519C881ECDA5270018D856 /* Toilet.swift in Sources */,
 				EC519C8E1ECDAD960018D856 /* ToiletAnnotation.swift in Sources */,
@@ -205,6 +209,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -254,6 +259,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
